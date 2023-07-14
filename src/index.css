@@ -5,3 +5,15 @@
 .bg-image {
 	filter: invert(10%) sepia(68%) saturate(434%) hue-rotate(240deg) brightness(43%) contrast(101%);
 }
+
+.stats-flex-container {
+	@apply mt-12 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-x-10 md:space-y-0 md:pr-8;
+}
+
+.stat-wrapper {
+	@apply flex flex-col items-center space-y-2 md:items-start;
+}
+
+.stat-title {
+	@apply font-lexendDeca text-xxs uppercase tracking-widest text-transparentStatHeading;
+}
