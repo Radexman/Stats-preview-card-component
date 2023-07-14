@@ -3,16 +3,40 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Tailwind CSS with Prettier auto-sorting plugin project boilerplate." />
-		<link rel="shortcut icon" href="./assets/tailwind-logo.png" type="image/x-icon" />
+		<meta
+			name="description"
+			content="Frontend Mentor challange project built with Tailwind CSS.
+"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet" />
+		<link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<script src="./js/index.js" defer></script>
-		<title>Tailwind CSS Starter</title>
+		<title>Stats preview card component</title>
 	</head>
 	<body>
-		<div class="flex min-h-screen flex-col items-center justify-center bg-slate-900">
-			<h1 class="text-center text-6xl text-white">Tailwind CSS Starter</h1>
-			<img src="./assets/tailwind-logo.png" alt="Tailwind CSS logo" width="150" />
+		<!-- Outer Card Wrapper -->
+		<div class="flex min-h-screen items-center justify-center bg-varyDarkBlue">
+			<!-- Main Card -->
+			<div class="container mx-10 max-w-5xl rounded-lg bg-darkDesaturatedBlue text-transparentMainParagraph">
+				<!-- Inner Card Wrapper -->
+				<div class="flex flex-col-reverse items-center justify-center md:flex-row">
+					<!-- Text Content -->
+					<div class="md:w-1/2">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptate saepe dignissimos modi molestias accusamus magni
+						eligendi repellat, iusto dolorum reiciendis repellendus in quae magnam harum deserunt tempora consequuntur vitae.
+					</div>
+					<!-- Side Image -->
+					<div class="md:w-1/2">
+						<!-- Image Desktop -->
+						<img src="./assets/image-header-desktop.jpg" class="bg-image hidden rounded-e-lg md:block" alt="" />
+						<!-- Image Mobile -->
+						<img src="./assets/image-header-mobile.jpg" class="bg-image w-full rounded-t-lg md:hidden" alt="" />
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

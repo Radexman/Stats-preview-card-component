@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image {
+	filter: invert(10%) sepia(68%) saturate(434%) hue-rotate(240deg) brightness(43%) contrast(101%);
+}
